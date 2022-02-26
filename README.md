@@ -1,2 +1,2 @@
 # microcalculator
-Calculator microservice - A microservice exercise
+Calculator microservice - A Spring Boot microservice exercise
