@@ -2,7 +2,7 @@ package com.patriarch.calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 class CalculatorControllerTests {
 	
@@ -10,9 +10,16 @@ class CalculatorControllerTests {
 
 	@Test
 	void testSum() {
-		Double result = controller.sum(4.3, 5.5);
+		double result = controller.sum(4.3, 5.5);
 		
-		assertEquals(9.8, result);
+		assertEquals(9.8, result, 0.0);
 	}
 
+	@Test
+	void testSub() {
+		double result = controller.sub(10.4, 3.5);
+		
+		assertEquals(6.9, result, 0.0);
+		
+	}
 }
