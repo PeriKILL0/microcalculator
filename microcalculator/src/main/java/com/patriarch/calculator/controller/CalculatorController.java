@@ -14,7 +14,7 @@ public class CalculatorController {
 	@Autowired
 	private CalculatorService calculatorService;
 	
-	public CalculatorController(CalculatorService calculatorService) {
+	CalculatorController(CalculatorService calculatorService) {
 		this.calculatorService = calculatorService;
 	}
 

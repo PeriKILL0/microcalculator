@@ -23,8 +23,7 @@ class CalculatorServiceImplTests {
 	@BeforeEach
 	public void setUp() {
 		MockitoAnnotations.openMocks(this);
-		calculator = new CalculatorServiceImpl();
-		calculator.setTracer(tracer);
+		calculator = new CalculatorServiceImpl(tracer);
 	}
 
 	@Test

@@ -12,15 +12,11 @@ public class CalculatorServiceImpl implements CalculatorService {
 	 */
 	private TracerImpl tracer;
 
-	public void setTracer(TracerImpl tracer) {
-		this.tracer = tracer;
-	}
-
 	public CalculatorServiceImpl() {
 		this.tracer = null;
 	}
 
-	public CalculatorServiceImpl(TracerImpl tracer) {
+	CalculatorServiceImpl(TracerImpl tracer) {
 		this.tracer = tracer;
 	}
 
