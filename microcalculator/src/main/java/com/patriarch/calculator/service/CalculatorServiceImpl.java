@@ -4,18 +4,32 @@ import org.springframework.stereotype.Component;
 
 import io.corp.calculator.TracerImpl;
 
+/**
+ * Calculator service implementation.
+ * 
+ * @author JFP
+ *
+ */
 @Component
 public class CalculatorServiceImpl implements CalculatorService {
 
 	/**
 	 * Tracer.
 	 */
-	private TracerImpl tracer;
+	private final TracerImpl tracer;
 
+	/**
+	 * Default constructor.
+	 */
 	public CalculatorServiceImpl() {
-		this.tracer = null;
+		this.tracer = new TracerImpl();
 	}
 
+	/**
+	 * Private constructor.
+	 * 
+	 * @param tracer Tracer.
+	 */
 	CalculatorServiceImpl(TracerImpl tracer) {
 		this.tracer = tracer;
 	}
