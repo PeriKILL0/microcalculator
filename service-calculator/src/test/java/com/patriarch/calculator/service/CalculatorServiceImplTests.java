@@ -8,8 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.stereotype.Component;
+
 import io.corp.calculator.TracerImpl;
 
+@Component
 class CalculatorServiceImplTests {
 
 	private CalculatorService calculator;
@@ -18,7 +21,7 @@ class CalculatorServiceImplTests {
 	private TracerImpl tracer;
 
 	@BeforeEach
-	public void setup() {
+	public void setUp() {
 		MockitoAnnotations.openMocks(this);
 		calculator = new CalculatorServiceImpl(tracer);
 	}
