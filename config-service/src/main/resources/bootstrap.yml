@@ -1,12 +1,17 @@
 server:
-  port: 8081
+  port: 8080
+
 spring:
   cloud:
     config:
       server:
         git:
           uri: git@github.com:PeriKILL0/microcalculator.git
-          search-paths:
-          - config-data
+          search-paths: config-data
           username: ${GIT_USER}
           passphrase: ${GIT_PASSPHRASE}
+          skip-ssl-validation: true
+  security:
+    user:
+      name: root
+      password: root
