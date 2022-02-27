@@ -25,7 +25,7 @@ class CalculatorServiceImplTests {
 
 	@Test
 	void testSum() {
-		double result = calculator.sum(4.3, 5.5);
+		double result = calculator.add(4.3, 5.5);
 
 		assertEquals(9.8, result, 0.0);
 		verify(tracer, times(1)).trace(result);
@@ -33,7 +33,7 @@ class CalculatorServiceImplTests {
 
 	@Test
 	void testSub() {
-		double result = calculator.sub(10.4, 3.5);
+		double result = calculator.subtract(10.4, 3.5);
 
 		assertEquals(6.9, result, 0.0);
 		verify(tracer, times(1)).trace(result);

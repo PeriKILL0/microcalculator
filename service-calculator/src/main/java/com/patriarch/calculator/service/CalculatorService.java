@@ -14,7 +14,7 @@ public interface CalculatorService {
 	 * @param value2 Second value.
 	 * @return Sum.
 	 */
-	public double sum(double value1, double value2);
+	public double add(double value1, double value2);
 
 	/**
 	 * Subtracts two values.
@@ -23,5 +23,5 @@ public interface CalculatorService {
 	 * @param value2 Second value.
 	 * @return Subtraction.
 	 */
-	public double sub(double value1, double value2);
+	public double subtract(double value1, double value2);
 }

@@ -18,14 +18,14 @@ public class CalculatorServiceImpl implements CalculatorService {
 	}
 
 	@Override
-	public double sum(double value1, double value2) {
+	public double add(double value1, double value2) {
 		double result = value1 + value2;
 		tracer.trace(result);
 		return result;
 	}
 
 	@Override
-	public double sub(double value1, double value2) {
+	public double subtract(double value1, double value2) {
 		double result = value1 - value2;
 		tracer.trace(result);
 		return result;
