@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 import io.corp.calculator.TracerImpl;
 
-@Component
 class CalculatorServiceImplTests {
 
 	private CalculatorService calculator;
